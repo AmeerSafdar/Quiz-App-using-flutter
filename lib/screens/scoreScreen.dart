@@ -5,7 +5,8 @@ import 'package:quiz_ui/constraints.dart';
 import 'package:quiz_ui/controlllers/questionCOntroller.dart';
 
 class Scores extends StatelessWidget {
-  const Scores({ Key? key }) : super(key: key);
+  late  int  sc=Get.arguments;
+   Scores({ Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +27,7 @@ class Scores extends StatelessWidget {
                   Spacer(flex: 3,),
                   Text("Score",style: Theme.of(context).textTheme.headline3!.copyWith(color: kSecondaryColor),),
                   Spacer(),
-                  Text("${_control.numberofCOrrectAnd*10}/${_control.questions.length*10}",
+                  Text("${sc * 10}/${_control.questions.length*10}",
                   style: Theme.of(context).textTheme.headline4!.copyWith(color: kSecondaryColor),
                   ),
                   Spacer(flex: 3,)

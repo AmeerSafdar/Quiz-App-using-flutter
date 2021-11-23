@@ -51,7 +51,11 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   InkWell(
                     onTap: (){
                       // print("hello");
-                      Get.to(Quizes());
+                      Get.to(
+                        Quizes(),
+                        transition:Transition.rightToLeft,
+                        
+                        );
                     },
                     child: Container(
                       width: double.infinity,

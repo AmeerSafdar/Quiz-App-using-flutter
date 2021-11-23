@@ -22,7 +22,6 @@ class _QuizesState extends State<Quizes> {
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
-          leading: Icon(Icons.arrow_back_ios),
           actions: [
             FlatButton(onPressed: (){
               _questionController.nextQuestion();

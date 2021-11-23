@@ -92,7 +92,12 @@ update();
       _animationController.forward().whenComplete(nextQuestion);
     }
     else{
-    Get.to(Scores());
+    // Get.offAndToNamed(Scores());
+    Get.off(
+      Scores(),arguments: numberofCOrrectAnd,
+      transition: Transition.rightToLeft,
+      duration: Duration(seconds:1)
+      );
     }
   }
 
